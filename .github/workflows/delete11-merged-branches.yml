@@ -3,7 +3,7 @@ name: Delete Merged Branches
 on:
   push:
     branches:
-      - main  # Replace with your main branch name (e.g., main or master)
+      - develp  # Replace with your main branch name (e.g., main or master)
 
 jobs:
   delete-merged-branches:
