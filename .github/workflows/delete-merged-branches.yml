@@ -12,7 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Fetch latest changes
+        run: git fetch --prune
+
       - name: Delete merged feature branches
         run: |
-          git fetch --prune
           git branch --merged | grep 'feature/' | xargs -n 1 git branch -d
